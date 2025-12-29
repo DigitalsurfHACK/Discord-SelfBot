@@ -17,7 +17,7 @@
     "url": "https://github.com/TheRacingLion/Discord-SelfBot/issues"
   },
   "engines": {
-    "node": ">=6.0.0"
+    "node": "18.x"
   },
   "dependencies": {
     "chalk": "^2.0.1",
