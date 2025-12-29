@@ -15,7 +15,10 @@ const games = require('./config/games.json')
 
 const Command = require('./src/Command.js')
 const gumerPSN = require('gumer-psn')
-const xbox = require('node-xbox')(config.XBOX?.apikey || '')
+const xbox = require('node-xbox')(
+  (config.XBOX && config.XBOX.apikey) ? config.XBOX.apikey : ''
+)
+
 
 /* ===============================
    ENV TOKEN ONLY (NO CONFIG TOKEN)
